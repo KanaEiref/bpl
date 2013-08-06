@@ -1,0 +1,27 @@
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 14px; //fall back to older browser
+	font-size: 1.4rem;
+
+	color: $textColor;
+	background-color: $backgroundColor;
+	@include outer-container;
+}
+
+section{
+	@include span-columns(12);
+}
+
+h1{
+	font-size: 24px;
+	font-size: 2.4rem;
+	@include h1Type;
+	text-shadow: 1px 0px $white;
+}
+
+
+
+

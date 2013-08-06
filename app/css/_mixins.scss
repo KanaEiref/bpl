@@ -1,0 +1,52 @@
+/*=================================*/
+/* 
+/*===================================*/
+@mixin font-face($font-family, $file-path, $font-weight, $font-style) {
+  @font-face {
+    font-family: $font-family;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+           url('#{$file-path}.woff') format('woff'),
+           url('#{$file-path}.ttf') format('truetype'),
+           url('#{$file-path}.svg##{$font-family}') format('svg');
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+  // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+      font-family: $font-family;
+        src: url('#{$file-path}.svg##{$font-family}') format('svg');
+    }
+  }
+}
+
+@include font-face(Josefin-Slab-Regular, '../fonts/josefinslab-regular-webfont', 400, normal);
+@include font-face(Josefin-Slab-Light, '../fonts/josefinslab-light-webfont', 300, normal);
+@include font-face(Josefin-Slab-Light-Italic, '../fonts/josefinslab-lightitalic-webfont', 300, italic);
+@include font-face(Josefin-Slab-Bold-Italic, '../fonts/josefinslab-bolditalic-webfont', 700, italic);
+@include font-face(Lato-Regular, '../fonts/lato-reg-webfont', 400, normal);
+@include font-face(Lato-Black, '../fonts/lato-bla-webfont', 900, normal);
+
+
+
+@mixin bodyType {
+  font-family: 'Lato-Regular', arial, sans-serif;
+  font-weight: 400; font-style: normal; }
+
+@mixin h1Type{
+  font-family: 'Josefin-Slab-Regular', serif;
+  font-weight: 400; font-style: normal; }
+
+@mixin h2Type {
+  font-family: 'Lato-Black', arial, sans-serif;
+  font-weight: 900; font-style: normal; }
+
+@mixin smallType {
+  font-family: 'Josefin-Slab-Light-Italic', serif;
+  font-weight: 100; font-style: italic; }
+
+@mixin quoteType {
+  font-family: 'Josefin-Slab-Bold-Italic', serif;
+  font-weight: 700; font-style: italic; }
+
