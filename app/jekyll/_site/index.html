@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>kana's AUX challenge form</title>
+        <meta name="viewport" content="width=device-width">
+
+
+        <link rel="stylesheet" href="assets/css/reset.css">
+         <link rel="stylesheet" href="assets/css/style.css">
+         <link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>
+     
+        <script src="assets/js/vendor/modernizr.custom.04595.js"></script>   
+
+
+    </head>
+    <body class="center">
+        <div class="container">
+        <header>
+	<h1>
+		Sign up for Whoo!
+	</h1>
+	<h2> 50 projects, 500 images, 10 videos, domain binding, and technical support.
+	</h2>
+
+</header>
+<section id="inputSection" class="center">
+
+<form id="kanaform">
+	<fieldset class="portfoilioSec">
+		
+		<legend>First, name your portfolio</legend>
+		
+		    <div class="inputWrapper">
+				<label  for="portfolioTitle">Portfolio title</label>
+				<input type="text" id="portfolioTitle" name="portfolioTitle" required />
+			</div>
+			<div class="inputWrapper">
+				<label for="portfolioAddress">Portfolio Address</label>
+				<input type="url" id="portfolioAddress" name="portfolioAddress"  required placeholder="yourname"/>
+				<label id="sample" for="portfolioAddress">.sample.com</label>
+
+			</div>
+			
+		
+	</fieldset>
+
+	<fieldset class="accountSec">
+		
+		<legend>Now, enter your account details</legend>
+			<div class="inputWrapper">
+				<label for="name">Name</label>
+				<input type="text" name="name" required/>
+			</div>
+			<div class="inputWrapper">
+				<label for="email">Email</label>
+				<input type="text" name="email" required/>
+				<div id="notes">NOTE: We'll never share your email, promise.</div>
+			</div>
+			<div class="inputWrapper">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" required />
+				<input type="text" id="hiddenPassword" class="hidden" name="password" />
+			</div>
+			<div class="inputWrapper">
+				
+				<label for="showPassword" class="checkbox">
+					<input id="showPassword" type="checkbox" name="showPassword" value="Show Password" id="showpasswordCheckbox"/>Show Password</label>
+			</div>
+		
+	</fieldset>
+
+	<fieldset class="paymentSec">
+		
+		<legend>Finally, enter your payment information <a href="#" id="paypal" > Use Paypal</a></legend> 
+		
+		<div class="inputWrapper" id="cardNumberWrapper">
+				<label for="cardNumber">Card number</label>
+				<input type="text" id="cardNumber" name="cardNumber" required/>
+		</div>
+		<!-- 4 crads -->
+		<div class="inputWrapper cards">
+			<input type="radio" id="amexcard" name="cards">
+			<label for="amexcard" id="lamexcard"></lable>
+		</div>
+		<div class="inputWrapper cards">
+			
+			<input type="radio" id="visaCard" name="cards">
+			<label for="visaCard" id="lvisaCard"></lable>
+		</div>
+		<div class="inputWrapper cards">
+			
+			<input type="radio" id="discoverCard" name="cards">
+			<label for="discoverCard" id="ldiscoverCard"></lable>
+		</div>
+		<div class="inputWrapper cards">
+			
+			<input type="radio" id="masterCard" name="cards">
+			<label for="masterCard" id="lmasterCard"></lable>
+		</div>
+
+		<div class="inputWrapper" id="securityCodeWrapper">
+			<label for="securityCode">Security code</label>
+			<input type="text" id="securityCode" name="securityCode" required />
+		</div>
+		<div class="inputWrapper" id="backWrapper">
+			<input type="radio" name="cardback" />
+			<label for="cardback" id="lcardBack"></label>
+		</div>
+
+		<div class="inputWrapper" id="monthWrapper">
+			<label for="month">Expiration date</label>
+			<select name="monthList" id="monthList" required>
+				<option value="month">Month</option>
+				<option value="1">01</option>
+				<option value="2">02</option>
+				<option value="3">03</option>
+				<option value="4">04</option>
+				<option value="5">05</option>
+				<option value="6">06</option>
+				<option value="7">07</option>
+				<option value="8">08</option>
+				<option value="9">09</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+		</div>
+		<div class="inputWrapper" id="yearWrapper">
+			<label for="year"></label>
+			<!-- <input type="number" value="year"  /> -->
+			<select name="yearList" id="yearList" required>
+				<option value="year">Year</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
+				<option value="2023">2023</option>
+				
+			</select>
+		</div>	
+		<label id="lock"></label>
+	</fieldset>
+	<input type="submit" name="create" value="Create your portfolio" />
+</form> 
+
+</section>
+
+
+
+        </div> <!-- /container -->
+        
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+        <script src="assets/js/kanascript.min.js"></script>
+        
+
+    </body>
+</html>

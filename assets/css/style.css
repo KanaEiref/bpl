@@ -1,0 +1,306 @@
+body {
+  background-color: #b3e3ff;
+  width: 100%;
+  margin: 0px;
+  font-family: "Antic Slab", "Times New Roman";
+  font-size: 100%;
+  max-width: 700px;
+  counter-reset: fieldset; }
+
+.container {
+  width: 90%;
+  margin-top: 0px;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: #b3e3ff; }
+
+header {
+  border-top-left-radius: 10px 5px;
+  border-top-right-radius: 10px 5px;
+  background-color: #096079;
+  margin: 3% auto 0 auto;
+  padding: 3% 3% 3% 3%; }
+  header h1 {
+    color: #f1fcff;
+    font-family: "Antic Slab", "Times New Roman";
+    font-size: 2em;
+    margin-left: 25px; }
+  header h2 {
+    color: #b3e3ff;
+    font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+    font-size: 0.9em;
+    padding-top: 8px;
+    margin-left: 25px; }
+
+section {
+  margin: 0 auto; }
+
+form {
+  background-color: white;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  padding: 10px;
+  font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+  font-size: 0.85em;
+  color: #5a5a5a;
+  /* this order is important, to override the above input padding-top value for showPassword Checkbox */
+  /* end of fieldset */ }
+  form label {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block; }
+  form input {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 100%;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 0 0px #cbcbcb; }
+  form label[for="portfolioAddress"] {
+    width: 100%; }
+  form input[name="portfolioAddress"] {
+    vertical-align: middle;
+    width: 60%;
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  form label[id="sample"] {
+    vertical-align: middle;
+    width: 39%;
+    float: right;
+    text-align: center;
+    background-color: #fafafa;
+    height: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: inset 0px 1px 0 0px #cbcbcb, inset 1px 0px #cbcbcb;
+    margin-top: 2px;
+    color: #a2a2b2; }
+  form input[type="radio"] + label {
+    opacity: 0.35; }
+  form input[type="radio"]:checked + label {
+    opacity: 1; }
+  form input[type="checkbox"] {
+    /* these 2 linds below are for lining up with "Show Password" label on the same line*/
+    margin-top: -1px;
+    padding-top: 1px;
+    float: left; }
+  form fieldset {
+    position: relative;
+    margin: 10% 3% 3% 6%;
+    background-color: #f3f5f5;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 3%;
+    border-radius: 5px;
+    /* for cards */ }
+    form fieldset > legend {
+      font-family: "Antic Slab", "Times New Roman";
+      color: #096079;
+      font-size: 1.4em;
+      position: absolute;
+      top: -65px;
+      left: -15px;
+      padding: 20px; }
+    form fieldset legend:before {
+      counter-increment: fieldset;
+      content: counter(fieldset);
+      display: inline-block;
+      font-family: "Times New Roman";
+      font-size: 1em;
+      color: white;
+      border-radius: 999px;
+      width: 25px;
+      line-height: 25px;
+      height: 25px;
+      padding: 4px;
+      padding-top: 5px;
+      margin-right: 18px;
+      background: #52a3d4;
+      border: 7px solid white;
+      text-align: center;
+      margin-left: -70px; }
+    form fieldset input[name="password"] {
+      /*float: left;*/ }
+    form fieldset input[name="showPassword"] {
+      width: 3%;
+      float: left;
+      display: inline; }
+    form fieldset.paymentSec #cardNumberWrapper {
+      width: 50%;
+      float: left; }
+    form fieldset.paymentSec .cards {
+      float: left;
+      margin-top: 35px;
+      padding-top: 10px; }
+    form fieldset input[type="radio"] {
+      display: none; }
+    form fieldset label[for="amexcard"] {
+      background: url("../images/sprite.png") no-repeat 0 -122px;
+      width: 45px;
+      height: 32px;
+      display: inline-block;
+      padding: 0 0 0 0px;
+      margin-left: 10px; }
+    form fieldset label[for="visaCard"] {
+      background: url("../images/sprite.png") no-repeat -48px -122px;
+      width: 45px;
+      height: 32px;
+      display: inline-block;
+      padding: 0 0 0 0px;
+      margin-left: 10px; }
+    form fieldset label[for="discoverCard"] {
+      background: url("../images/sprite.png") no-repeat -96px -122px;
+      width: 45px;
+      height: 32px;
+      display: inline-block;
+      padding: 0 0 0 0px;
+      margin-left: 10px; }
+    form fieldset label[for="masterCard"] {
+      background: url("../images/sprite.png") no-repeat -144px -122px;
+      width: 45px;
+      height: 32px;
+      display: inline-block;
+      padding: 0 0 0 0px;
+      margin-left: 10px; }
+    form fieldset.paymentSec #securityCodeWrapper {
+      clear: both;
+      float: left;
+      width: 30%; }
+    form fieldset.paymentSec #backWrapper {
+      float: left;
+      margin-top: 21px;
+      padding-top: 10px; }
+    form fieldset.paymentSec #monthWrapper {
+      clear: both;
+      float: left; }
+    form fieldset.paymentSec #yearWrapper {
+      float: left;
+      margin-left: 10px;
+      margin-top: 14px;
+      width: 20%; }
+    form fieldset label[for="cardback"] {
+      background: url("../images/sprite.png") no-repeat 0px -374px;
+      width: 62px;
+      height: 32px;
+      display: inline-block;
+      padding: 0 0 0 0px;
+      margin-left: 10px;
+      margin-top: 15px; }
+    form fieldset label#lock {
+      clear: both;
+      float: right;
+      background: url("../images/sprite.png") no-repeat -60px -499px;
+      width: 14px;
+      height: 19px; }
+    form fieldset .pass {
+      clear: both;
+      float: right;
+      background: url("../images/sprite.png") no-repeat -31px -499px;
+      width: 19px;
+      height: 19px; }
+    form fieldset .notPass {
+      clear: both;
+      float: right;
+      background: none;
+      background: url("../images/sprite.png") no-repeat -2px -499px;
+      width: 19px;
+      height: 19px; }
+  form input[type="submit"] {
+    background-color: #8ca90c;
+    width: 30%;
+    color: white;
+    height: 50px;
+    position: relative;
+    left: 35%;
+    padding-top: 1px; }
+  form .paymentSec {
+    clear: both; }
+  form .paymentSec legend {
+    width: 100%;
+    float: left; }
+
+/*  end of form */
+a[id="paypal"] {
+  text-decoration: none;
+  float: right; }
+
+#paypal {
+  color: #6dd0ff;
+  font-family: "Lucida Grande", Arial, Verdana, sans-serif;
+  font-size: 1em;
+  padding-top: 15px; }
+
+#notes {
+  padding: 5px 0px 15px 0px;
+  color: #a2a2b2; }
+
+#showpass {
+  width: 97%;
+  float: right;
+  display: inline; }
+
+input:focus {
+  border: 1px dotted black; }
+
+input.error, select.error {
+  border: 1px dotted red; }
+
+label.error {
+  color: red;
+  font-style: italic;
+  clear: both; }
+
+label[for="cardback"].isAmexcard {
+  background: url("../images/sprite.png") no-repeat 0 -331px;
+  width: 70px;
+  height: 33px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+  margin-left: 10px;
+  margin-top: 25px;
+  padding-top: 20px; }
+
+label[for="cardback"].isNotAmexcard {
+  background: url("../images/sprite.png") no-repeat 0px -374px;
+  width: 62px;
+  height: 32px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+  margin-left: 10px;
+  margin-top: 25px;
+  padding-top: 20px; }
+
+.center {
+  margin-left: auto;
+  margin-right: auto; }
+
+.hidden {
+  display: none; }
+
+.inputWrapperVal {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative; }
+
+.errorImage {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  background: url("../images/sprite.png") no-repeat -2px -499px;
+  width: 19px;
+  height: 19px; }
+
+.passImage {
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  background: url("../images/sprite.png") no-repeat -31px -499px;
+  width: 19px;
+  height: 19px; }
