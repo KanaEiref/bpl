@@ -2,12 +2,61 @@
 layout: default
 title: BPL -- kana's AUX challenge
 ---
-<header>
-	<h1>
-		Boston Public Library
-	</h1>
-	
-
+<header role="banner">
+	<nav class="the-icons" role="navigation">
+		<i class="icon-menu">
+		<span class="logo">Boston Public Library</span></i>	
+	</nav>
 </header>
+
+
+<section>
+	<p class="todayHighlights">Central Library is open today from <br>9:00 a.m. to 7:00 p.m.</p>
+</section>
+<section>
+	<form>
+		<input type="search" placeholder="search" results=5 name="searchBox" id="searchBox">
+		</input>
+	
+	<div class="inputWrapper">
+			<input type="radio" id="scatalog" name="searches">
+			<label for="scatalog" id="lcatalog">Catalog</label>
+	</div>
+	<div class="inputWrapper">		
+		<input type="radio" id="ssite" name="searches">
+		<label for="ssite" id="lsite">Site</label>
+	</div>
+	</form>
+</section>
+
+<nav class="off-canvas-navigation">
+	<ul>
+		<li class="hoursLocations">
+			<a class="hours-locations-button" href="#hoursLocSec">Hours &#38; Locations</a>
+		</li>
+		<li class="services">
+			<a class="service-button" href="#servciesSec">Services</a>
+		</li>
+	</ul>
+</nav>
+<section id="hourLocSec" role="hourLoc">
+	
+</section>
+<section id="todayEventsSec" role="todayEvents">
+	<h3> Hours &#38; Locations </h3>
+	<div class="contentContainer">
+		<p class="branchName">North End Branch</p>
+		<p class="hour">M - F: 10 a.m. - 6 p.m.</p>
+		<p class="hour hour2">Sat Sun: Closed</p>
+		<p class="location">25 Parmenter Street,</p>
+		<p class="location">Boston,MA 02113</p>
+	</div>
+</section>
+<section id="servicesSec" role="services">
+	services
+</section>
+
+<footer id="footer" role="contentinfo">
+</footer>
 
 

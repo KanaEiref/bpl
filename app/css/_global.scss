@@ -1,26 +1,201 @@
 html{
 	font-size: 62.5%;
+	
+
 }
 
 body{
+	margin: 0 auto;
 	font-size: 14px; //fall back to older browser
 	font-size: 1.4rem;
+
+	line-height: 1.3;
+
 
 	color: $textColor;
 	background-color: $backgroundColor;
 	@include outer-container;
+	@include bodyType;
+}
+
+a { text-decoration: none}
+
+h1{
+	font-size: 36px;
+	font-size: 3.6em;
+}
+
+h2{
+	font-size: 24px;
+	font-size: 2.4em;
+}
+h3{
+	font-size: 18px;
+	font-size: 1.8em;
 }
 
 section{
+
 	@include span-columns(12);
+
 }
 
-h1{
-	font-size: 24px;
-	font-size: 2.4rem;
-	@include h1Type;
-	text-shadow: 1px 0px $white;
+.logo{
+	vertical-align: 0.3em;
+	margin-top: -3em;
+	font-size: 20px;
+	font-size:	2.0rem;
+	//font-size: 36px;
+	//font-size:	3.6rem;
+//	font-family: 'Open Sans', sans-serif;  
+ // font-weight: 800; font-style: normal; 
+
+ 	@include latoLight;
+ 	//font-family: 'Roboto', sans-serif;
+ 	//font-weight: 900, sans-serif;
+	border-radius: 0.5em;
+	text-shadow: 1px 1px 0 #FFF;
 }
+
+.icon-menu{
+	font-size: 36px;
+	font-size: 3.6rem;
+}
+
+.todayHighlights{
+	background-color: $blockBg;
+	color: $white;
+	padding-top: 1em;
+  	padding-bottom: 1em;
+  	padding-left: 1em;
+  	text-transform: uppercase;
+  	@include latoLight;
+  	text-align: left;
+  	letter-spacing: 0.1214em;   
+}
+
+form{
+	padding-left: 1em;
+	vertical-align: bottom;
+
+	.inputWrapper{
+		float:left;
+		margin-top: 0.3em;
+
+	}
+
+	input[type=search]{
+	float: left;
+	color: red;  
+	//text-align: right;
+	cursor: pointer;
+	display: block; 
+	width: 50%;
+
+	//letter-spacing: 4px;        
+	//text-shadow: 0 0 2px black;       
+	//word-spacing: 20px;  
+	/* Remove default */
+   // -webkit-appearance: none;
+    
+    /* Now your own custom styles */
+   // height: 10px;
+   // width: 10px;
+   // background: red;
+    /* Will place small red box on the right of input (positioning carries over) */   
+    font-size: 2.4em;
+  
+    margin-right: 1em;
+	}
+
+	input[type="radio"]{	
+	}
+}
+
+[role="hourLoc"],
+[role="todayEvents"],
+[role="services"] {
+	@include transition(.2s all ease);			
+	width: 90%;
+	padding: 5%;
+}
+.js [role="hourLoc"] {	
+	margin-left: -100%;
+	float: left;
+}
+.js [role="todayEvents"] {
+	margin-left: 0;
+	float: left;
+
+	//background: (238, 238, 14, 0.5);
+	background-color: white;
+	box-shadow: 0 0 25px rgba(0,0,0, 0.2);
+	z-index: 1;
+	position: relative;
+}
+
+.js [role="services"] {	
+	margin-right: -200%;
+	float: left;		
+}
+
+.off-canvas-navigation {
+width: 100%;
+overflow: hidden;
+display: block;
+color: #FFF;
+
+}
+
+
+
+.off-canvas-navigation ul li {
+
+	margin-left:-5em;
+width: 70%;
+display: block;
+float: left;
+}
+
+
+
+.off-canvas-navigation ul li.services {
+	width: 20%;
+	float: right;
+}
+
+
+
+.hours-locations-button, .service-button{
+	padding: 1em 20%;
+	font-size: 10px;
+	font-size: 1em;
+	display: block;
+	background: rgba(0,0,0, 0.3);
+	color: #FFF;
+	border-top-right-radius: 1em;
+	box-shadow: inset 0 20px 20px rgba(255, 255, 255, 0.1);
+	@include latoLight;
+
+
+}
+.service-button{
+	text-align: right;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 0;
+	//background: rgba(0, 0, 0, 0.15);
+}
+
+::selection {
+background: #FFCCCC;
+color: #000;
+text-shadow: none;
+}
+
+
+
+
+
 
 
 

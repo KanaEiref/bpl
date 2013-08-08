@@ -5,26 +5,78 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>BPL -- kana's AUX challenge</title>
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-        
+         <link rel="stylesheet" href="assets/css/fontelloanimation.css">
+         <link rel="stylesheet" href="assets/css/fontello.css">
          <link rel="stylesheet" href="assets/css/style.css">
          <!--<link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'>-->
-     
+        
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
         <script src="assets/js/vendor/modernizr.custom.04595.js"></script>   
 
 
     </head>
     <body class="center">
         <div class="container">
-        <header>
-	<h1>
-		Boston Public Library
-	</h1>
-	
-
+        <header role="banner">
+	<nav class="the-icons" role="navigation">
+		<i class="icon-menu">
+		<span class="logo">Boston Public Library</span></i>	
+	</nav>
 </header>
+
+
+<section>
+	<p class="todayHighlights">Central Library is open today from <br>9:00 a.m. to 7:00 p.m.</p>
+</section>
+<section>
+	<form>
+		<input type="search" placeholder="search" results=5 name="searchBox" id="searchBox">
+		</input>
+	
+	<div class="inputWrapper">
+			<input type="radio" id="scatalog" name="searches">
+			<label for="scatalog" id="lcatalog">Catalog</label>
+	</div>
+	<div class="inputWrapper">		
+		<input type="radio" id="ssite" name="searches">
+		<label for="ssite" id="lsite">Site</label>
+	</div>
+	</form>
+</section>
+
+<nav class="off-canvas-navigation">
+	<ul>
+		<li class="hoursLocations">
+			<a class="hours-locations-button" href="#hoursLocSec">Hours &#38; Locations</a>
+		</li>
+		<li class="services">
+			<a class="service-button" href="#servciesSec">Services</a>
+		</li>
+	</ul>
+</nav>
+<section id="hourLocSec" role="hourLoc">
+	
+</section>
+<section id="todayEventsSec" role="todayEvents">
+	<h3> Hours &#38; Locations </h3>
+	<div class="contentContainer">
+		<p class="branchName">North End Branch</p>
+		<p class="hour">M - F: 10 a.m. - 6 p.m.</p>
+		<p class="hour hour2">Sat Sun: Closed</p>
+		<p class="location">25 Parmenter Street,</p>
+		<p class="location">Boston,MA 02113</p>
+	</div>
+</section>
+<section id="servicesSec" role="services">
+	services
+</section>
+
+<footer id="footer" role="contentinfo">
+</footer>
 
 
 

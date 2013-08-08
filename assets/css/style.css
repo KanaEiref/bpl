@@ -76,19 +76,39 @@ html {
   font-size: 62.5%; }
 
 body {
+  margin: 0 auto;
   font-size: 14px;
   font-size: 1.4rem;
-  color: #535454;
+  line-height: 1.3;
+  color: black;
   background-color: #d8e1e5;
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-style: normal; }
   body:before, body:after {
     content: " ";
     display: table; }
   body:after {
     clear: both; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-size: 36px;
+  font-size: 3.6em; }
+
+h2 {
+  font-size: 24px;
+  font-size: 2.4em; }
+
+h3 {
+  font-size: 18px;
+  font-size: 1.8em; }
 
 section {
   display: block;
@@ -98,13 +118,115 @@ section {
   section:last-child {
     margin-right: 0; }
 
-h1 {
-  font-size: 24px;
-  font-size: 2.4rem;
-  font-family: 'Josefin-Slab-Regular', serif;
-  font-weight: 400;
+.logo {
+  vertical-align: 0.3em;
+  margin-top: -3em;
+  font-size: 20px;
+  font-size: 2.0rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   font-style: normal;
-  text-shadow: 1px 0px white; }
+  border-radius: 0.5em;
+  text-shadow: 1px 1px 0 #FFF; }
+
+.icon-menu {
+  font-size: 36px;
+  font-size: 3.6rem; }
+
+.todayHighlights {
+  background-color: #444444;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: left;
+  letter-spacing: 0.1214em; }
+
+form {
+  padding-left: 1em;
+  vertical-align: bottom; }
+  form .inputWrapper {
+    float: left;
+    margin-top: 0.3em; }
+  form input[type=search] {
+    float: left;
+    color: red;
+    cursor: pointer;
+    display: block;
+    width: 50%;
+    /* Remove default */
+    /* Now your own custom styles */
+    /* Will place small red box on the right of input (positioning carries over) */
+    font-size: 2.4em;
+    margin-right: 1em; }
+
+[role="hourLoc"],
+[role="todayEvents"],
+[role="services"] {
+  -webkit-transition: 0.2s all ease;
+  -moz-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+  width: 90%;
+  padding: 5%; }
+
+.js [role="hourLoc"] {
+  margin-left: -100%;
+  float: left; }
+
+.js [role="todayEvents"] {
+  margin-left: 0;
+  float: left;
+  background-color: white;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative; }
+
+.js [role="services"] {
+  margin-right: -200%;
+  float: left; }
+
+.off-canvas-navigation {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  color: #FFF; }
+
+.off-canvas-navigation ul li {
+  margin-left: -5em;
+  width: 70%;
+  display: block;
+  float: left; }
+
+.off-canvas-navigation ul li.services {
+  width: 20%;
+  float: right; }
+
+.hours-locations-button, .service-button {
+  padding: 1em 20%;
+  font-size: 10px;
+  font-size: 1em;
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+  color: #FFF;
+  border-top-right-radius: 1em;
+  box-shadow: inset 0 20px 20px rgba(255, 255, 255, 0.1);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: normal; }
+
+.service-button {
+  text-align: right;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 0; }
+
+::selection {
+  background: #FFCCCC;
+  color: #000;
+  text-shadow: none; }
 
 /* Helper Classes =============================================================================== */
 .hide {
