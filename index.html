@@ -25,6 +25,7 @@
 	<nav class="the-icons" role="navigation">
 		<i class="icon-menu">
 		<span class="logo">Boston Public Library</span></i>	
+		<i class="icon-search"></i>
 	</nav>
 </header>
 
@@ -32,6 +33,7 @@
 <section>
 	<p class="todayHighlights">Central Library is open today from <br>9:00 a.m. to 7:00 p.m.</p>
 </section>
+<!--
 <section>
 	<form>
 		<input type="search" placeholder="search" results=5 name="searchBox" id="searchBox">
@@ -47,32 +49,84 @@
 	</div>
 	</form>
 </section>
-
+-->
 <nav class="off-canvas-navigation">
 	<ul>
 		<li class="hoursLocations">
-			<a class="hours-locations-button" href="#hoursLocSec">Hours &#38; Locations</a>
+			<a class="hours-locations-button" href="#hoursLocSec">Visit</a>
 		</li>
+		<!--<li class="eventsLi">
+			<a class="events-button" href="#eventssec">Events</a>
+		</li>-->
 		<li class="services">
 			<a class="service-button" href="#servciesSec">Services</a>
 		</li>
 	</ul>
 </nav>
 <section id="hourLocSec" role="hourLoc">
-	
+    <div class="box">
+		<h3> HOURS &#38; LOCATIONS </h3>
+		<div>
+			<h4> Central Library</h4>
+			<div>
+				<p class="primaryDetail">700 Boylston Street, Copley Square,</p>
+				<p class="primaryDetail">Boston,MA 02116</p>
+				<P class="secondaryDetail"> M - F 9:00 a.m - 5:00 p.m.</p>
+			</div>		
+		</div>
+		<div>
+			<h4> Brighton Branch</h4>
+			<div>
+				<p class="primaryDetail">40 Academy Hill Road, </p>
+				<p class="primaryDetail">Brighton, MA 02135</p>
+				<P class="secondaryDetail"> M - F 9:00 a.m - 5:00 p.m.</p>
+			</div>		
+		</div>
+		<div>
+			<h4> North End Branch</h4>
+			<div>
+				<p class="primaryDetail">25 Parmenter Street,</p>
+				<p class="primaryDetail">Boston,MA 02113</p>
+				<P class="secondaryDetail"> M - F 9:00 a.m - 5:00 p.m.</p>
+			</div>		
+		</div>
+	</div>
+
 </section>
-<section id="todayEventsSec" role="todayEvents">
-	<h3> Hours &#38; Locations </h3>
-	<div class="contentContainer">
-		<p class="branchName">North End Branch</p>
-		<p class="hour">M - F: 10 a.m. - 6 p.m.</p>
-		<p class="hour hour2">Sat Sun: Closed</p>
-		<p class="location">25 Parmenter Street,</p>
-		<p class="location">Boston,MA 02113</p>
+<section  id="eventsSec" role="todayEvents">
+	<div class="box" id="todayEvents">
+		<h3> EVENTS TODAY</h3>
+		<h4> KIDS</h4>
+		<div class="events">
+			<p class="primaryDetail">Toddler Sing-along</p>
+			<P class="secondaryDetail"> Brighton branch 10:00 a.m - 10:30 a.m.</p>
+		</div>	
+		<div class="events">
+			<p class="primaryDetail">Preschool story time</p>
+			<P class="secondaryDetail"> North end branch 09:00 a.m - 09:30 a.m.</p>
+		</div>	
+		<h4> TEENS</h4>
+		<div class="events">
+			<p class="primaryDetail">Multimedia design class</p>
+			<P class="secondaryDetail"> Brighton branch 10:00 a.m - 10:30 a.m.</p>
+		</div>	
+		<div class="events">
+			<p class="primaryDetail">ESL for Teens</p>
+			<P class="secondaryDetail"> North end branch 09:00 a.m - 09:30 a.m.</p>
+		</div>	
+		<h4> ADULTS</h4>
+		<div class="events">
+			<p class="primaryDetail">French novel group</p>
+			<P class="secondaryDetail"> Brighton branch 10:00 a.m - 10:30 a.m.</p>
+		</div>	
+		<div class="events">
+			<p class="primaryDetail">ESL meeting</p>
+			<P class="secondaryDetail"> North end branch 09:00 a.m - 09:30 a.m.</p>
+		</div>	
 	</div>
 </section>
 <section id="servicesSec" role="services">
-	services
+	
 </section>
 
 <footer id="footer" role="contentinfo">

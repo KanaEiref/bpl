@@ -1,3 +1,13 @@
+/* watermelon:
+Primary: #E51837
+less bright: #EAB3BB
+lighter: #FBE2E6
+lightest: #FBEFF1
+
+border-radius: 4px;
+border: solid 1px #7898A5;
+background-color: #C5D2D8; (still darker than background) */
+
 $backgroundColor: #D8E1E5;
 $borderBottomColor: #CED1D3;
 $borderTopColor: #CED1D3;
@@ -5,3 +15,10 @@ $borderTopColor: #CED1D3;
 $textColor: #000000;
 $white: #ffffff;
 $blockBg: #444;
+
+$tableTitleBg: #E51837;
+$subTableTitleBg: #EAB3BB;
+$tableBorder: #EAB3BB;
+$lightestRed: #FBEFF1;
+
+$primary: #E51837;

@@ -95,11 +95,7 @@ module.exports = function(grunt) {
       },
       javascript: {
         files: ['Gruntfile.js', sourcePath + 'js/*.js'] ,
-       // tasks: ['jshint', 'copy']
-
-         //above  commented out by kana
-       tasks: ['jshint', 'uglify']
-
+        tasks: ['jshint', 'copy', 'uglify']
       },
       jekyll: {
         files: [

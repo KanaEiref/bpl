@@ -3,6 +3,15 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* watermelon:
+Primary: #E51837
+less bright: #EAB3BB
+lighter: #FBE2E6
+lightest: #FBEFF1
+
+border-radius: 4px;
+border: solid 1px #7898A5;
+background-color: #C5D2D8; (still darker than background) */
 /*=================================*/
 /* 
 /*===================================*/
@@ -86,7 +95,7 @@ body {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato-Regular', arial, sans-serif;
   font-weight: 400;
   font-style: normal; }
   body:before, body:after {
@@ -107,6 +116,9 @@ h2 {
   font-size: 2.4em; }
 
 h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: normal;
   font-size: 18px;
   font-size: 1.8em; }
 
@@ -119,7 +131,7 @@ section {
     margin-right: 0; }
 
 .logo {
-  vertical-align: 0.3em;
+  vertical-align: 0.2em;
   margin-top: -3em;
   font-size: 20px;
   font-size: 2.0rem;
@@ -127,11 +139,16 @@ section {
   font-weight: 300;
   font-style: normal;
   border-radius: 0.5em;
-  text-shadow: 1px 1px 0 #FFF; }
+  text-shadow: 1px 1px 0 #FFF;
+  color: #000; }
 
-.icon-menu {
-  font-size: 36px;
-  font-size: 3.6rem; }
+.icon-menu, .icon-search {
+  font-size: 30px;
+  font-size: 3.0rem;
+  color: black; }
+
+.icon-search {
+  float: right; }
 
 .todayHighlights {
   background-color: #444444;
@@ -144,48 +161,65 @@ section {
   font-weight: 300;
   font-style: normal;
   text-align: left;
-  letter-spacing: 0.1214em; }
+  letter-spacing: 0.1214em;
+  margin: 0 auto; }
 
-form {
-  padding-left: 1em;
-  vertical-align: bottom; }
-  form .inputWrapper {
-    float: left;
-    margin-top: 0.3em; }
-  form input[type=search] {
-    float: left;
-    color: red;
-    cursor: pointer;
-    display: block;
-    width: 50%;
-    /* Remove default */
-    /* Now your own custom styles */
-    /* Will place small red box on the right of input (positioning carries over) */
+ /*
+form{
+	padding-left: 1em;
+	vertical-align: bottom;
+
+	.inputWrapper{
+		float:left;
+		margin-top: 0.3em;
+
+	}
+
+	input[type=search]{
+	float: left;
+	color: red;  
+	
+	cursor: pointer;
+	display: block; 
+	width: 50%;	
     font-size: 2.4em;
-    margin-right: 1em; }
+  
+    margin-right: 1em;
+	}
 
+	input[type="radio"]{	
+	}
+}*/
 [role="hourLoc"],
 [role="todayEvents"],
 [role="services"] {
   -webkit-transition: 0.2s all ease;
   -moz-transition: 0.2s all ease;
   transition: 0.2s all ease;
-  width: 90%;
+  width: 95%;
   padding: 5%; }
 
 .js [role="hourLoc"] {
+  background-color: #eeeeee;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
   margin-left: -100%;
   float: left; }
 
 .js [role="todayEvents"] {
   margin-left: 0;
   float: left;
-  background-color: white;
+  background-color: #eeeeee;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
   z-index: 1;
   position: relative; }
 
 .js [role="services"] {
+  background-color: #eeeeee;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
   margin-right: -200%;
   float: left; }
 
@@ -193,20 +227,20 @@ form {
   width: 100%;
   overflow: hidden;
   display: block;
-  color: #FFF; }
+  color: #FFF;
+  margin: 0 auto; }
 
 .off-canvas-navigation ul li {
-  margin-left: -5em;
-  width: 70%;
+  margin-left: -3em;
+  width: 20%;
   display: block;
   float: left; }
 
 .off-canvas-navigation ul li.services {
-  width: 20%;
   float: right; }
 
 .hours-locations-button, .service-button {
-  padding: 1em 20%;
+  padding: 0.5em 20%;
   font-size: 10px;
   font-size: 1em;
   display: block;
@@ -219,14 +253,84 @@ form {
   font-style: normal; }
 
 .service-button {
+  padding: 0.5em 1em;
   text-align: right;
   border-top-left-radius: 1em;
   border-top-right-radius: 0; }
+
+.events-button {
+  margin-left: 5em;
+  padding: 0.5em 20%;
+  font-size: 10px;
+  font-size: 1em;
+  display: block;
+  background: rgba(0, 0, 0, 0.3);
+  color: #FFF;
+  box-shadow: inset 0 20px 20px rgba(255, 255, 255, 0.1);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  width: 10rem; }
 
 ::selection {
   background: #FFCCCC;
   color: #000;
   text-shadow: none; }
+
+.box {
+  border: 1px solid #ced1d3;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-topleft: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-top-left-radius: 5px; }
+  .box h3 {
+    background-color: rgba(229, 24, 55, 0.9);
+    color: white;
+    padding: 0.3em 0px;
+    text-align: center;
+    margin: 0; }
+  .box h4 {
+    background-color: #eab3bb;
+    color: #000;
+    padding: 0.3em 0px;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; }
+  .box .primaryDetail {
+    color: #e51837;
+    font-family: 'Lato-regular', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.6rem; }
+  .box .secondaryDetail {
+    color: #000; }
+  .box p {
+    color: #333;
+    padding-left: 10px;
+    margin: 0.5em auto; }
+
+.active-left [role="hourLoc"] {
+  margin-left: 0;
+  width: 80%; }
+
+.active-left [role="todayEvents"] {
+  margin-right: -100%; }
+
+.active-left [role="services"] {
+  margin-right: -100%;
+  float: right; }
+
+.active-right [role="hourLoc"] {
+  margin-left: -100%; }
+
+.active-right [role="todayEvents"] {
+  margin-left: -90%; }
+
+.active-right [role="services"] {
+  margin-left: 0;
+  width: 80%; }
 
 /* Helper Classes =============================================================================== */
 .hide {
