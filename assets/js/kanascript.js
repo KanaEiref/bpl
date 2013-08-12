@@ -13,24 +13,24 @@ var showVisit = function() {
 // add/remove classes everytime the window resize event fires
 jQuery(window).resize(function(){
 	var off_canvas_nav_display = $('.off-canvas-navigation').css('display');
-	var menu_button_display = $('.menu-button').css('display');
+	
 	if (off_canvas_nav_display === 'block') {			
 		$("body").removeClass("three-column").addClass("small-screen");				
 	} 
 	if (off_canvas_nav_display === 'none') {
-		$("body").removeClass("active-sidebar active-nav small-screen")
+		$("body").removeClass("active-right active-left small-screen")
 			.addClass("three-column");			
 	}	
 	
 });	
 
 jQuery(document).ready(function($) {
-		// Toggle for nav menu
+		// Toggle for left menu
 		$('.hours-locations-button').click(function(e) {
 			e.preventDefault();
 			showVisit();							
 		});	
-		// Toggle for sidebar
+		// Toggle for right
 		$('.service-button').click(function(e) {
 			e.preventDefault();
 			showServices();									

@@ -10,7 +10,7 @@ body{
 	line-height: 1.3;
 	color: $textColor;
 	background-color: $backgroundColor;
-	@include outer-container;
+	//@include outer-container;
 	@include bodyType;
 }
 
@@ -32,7 +32,8 @@ h3{
 }
 
 section{
-	@include span-columns(12);
+//	@include span-columns(12);
+
 }
 
 .logo{
@@ -45,12 +46,13 @@ section{
 //	font-family: 'Open Sans', sans-serif;  
  // font-weight: 800; font-style: normal; 
 
- 	@include latoLight;
+ //	@include latoLight;
  	//font-family: 'Roboto', sans-serif;
  	//font-weight: 900, sans-serif;
 	border-radius: 0.5em;
-	text-shadow: 1px 1px 0 #FFF;
-	color: #000;
+	@include latoRegular;
+	//text-shadow: 1px 1px 0 #FFF;
+	color: $primary;
 }
 
 .icon-menu, .icon-search{
@@ -203,7 +205,8 @@ form{
     -webkit-border-top-left-radius:5px;
 
     h3 {
-		background-color: rgba(229, 24, 55, 0.9);
+		//background-color: rgba(229, 24, 55, 0.9);
+		@include h3BgColor;
 		color:white;
 		padding:0.3em 0px;
 		text-align: center;
@@ -220,11 +223,10 @@ form{
 		padding-bottom: 0.5em;
 	}
 
-	.primaryDetail{
-		color: $primary;
+	.primaryDetail a{
+		color: $darkItalic2;
 		@include primaryTitle;
 		font-size: 1.6rem;
-
 	}
 
 	.secondaryDetail{
@@ -232,11 +234,30 @@ form{
 	}
 
 	p {
-	color:#333;
-	padding-left:10px;
-	margin: 0.5em auto;
+		color:#333;
+		padding-left:10px;
+		margin: 0.5em auto;
 	}
+
+	a.secondaryDetail{
+		display: block;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		padding-left: 0.5em;
+	}
+
+	a.secondaryDetail:hover{
+		background-color: #FBE2E6;
+		color: $primary;
+	}
+
+	p.primaryDetail:hover{
+		background-color: #FBE2E6;
+		color: $primary;
+	}
+
 }
+
 
 .active-left [role="hourLoc"] {	
 	margin-left: 0;	
@@ -260,6 +281,138 @@ form{
 	margin-left: 0;
 	width: 80%;	
 }
+
+.active-left [role="main"] {
+	-webkit-transition: .1s all ease;
+	-moz-transition: .1s all ease;
+	-o-transition: .1s all ease;		
+	-ms-transition: .1s all ease;
+	transition: .1s all ease;	
+}
+
+
+
+//for medium screen
+@media all and (min-width: 600px) {	
+
+	.hours-locations-button{
+		display: none;		
+	}
+	.service-button{
+		border: none;
+	}
+
+	.js [role="hourLoc"] {
+		width: 38%;	
+		margin-left: 1%;
+		margin-right: 2%;;
+	}
+	.js [role="todayEvents"] {
+		width: 48%;
+		float: left;
+
+		margin-right: 2%;
+	}
+	.js [role="Services"] {
+		width: 10%;
+	}				
+	.active-right [role="hourLoc"] {	
+		margin-left: -100%;
+	}
+	.active-right [role="todayEvents"] {
+		margin-left: 0;
+		width: 60%;
+	}
+	.active-right [role="services"] {	
+		//margin-right: -80%;
+		margin-right: 0;
+		width: 30%;
+
+	}				
+}
+
+@media all and (min-width: 890px) {	
+	.off-canvas-navigation {
+		display: none;
+		
+	}
+
+	.js [role="hourLoc"] {
+		width: 22%;	
+		margin-left: 2%;;
+		margin-right: 2%;
+		float: left;
+		padding: 1%
+	}
+
+	.js [role="todayEvents"] {
+		width: 42%;
+		padding: 1%;
+		margin-right: 2%;		
+	}
+
+	.js [role="services"] {
+		width: 24%;	
+		padding: 1%;	
+		margin-right: 0;
+		float: left;
+	}	
+
+	// section [role="hourLoc"]{
+	// 	margin-right: 5em;
+	// } 
+	// section [role="todayEvents"]
+	// {
+	// 	margin-right: 5em;
+		
+
+	// }	
+
+	#bigBg{
+
+		// position: absolute;
+		// top: 5em;
+		// left:0;
+		//min-width: 100%;
+
+		 margin-bottom: 5em;
+		// width: 100%;
+		// height: 480px;
+	}
+
+	.todayHighlights {
+		background-image: url('../images/bplInsideBig.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		
+		color: #fff;
+		// padding-top: 1em;
+		// padding-bottom: 1em;
+		// padding-left: 1em;
+		text-transform: uppercase;
+		font-family: 'Lato', sans-serif;
+		font-weight: 100;
+		font-style: normal;
+		text-align: center;
+		vertical-align: middle;
+		font-size: 6rem;
+		letter-spacing: 0.1214em;
+		margin: 0 auto;
+	}
+
+	.three-column{
+		width: 100%;
+	}
+
+	
+	.container2{
+		max-width: 1140px;
+		margin: 0 auto;
+	}
+
+
+}
+
 
 
 

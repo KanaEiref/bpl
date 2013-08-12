@@ -21,12 +21,12 @@
   }
 }
 
-@include font-face(Josefin-Slab-Regular, '../fonts/josefinslab-regular-webfont', 400, normal);
-@include font-face(Josefin-Slab-Light, '../fonts/josefinslab-light-webfont', 300, normal);
-@include font-face(Josefin-Slab-Light-Italic, '../fonts/josefinslab-lightitalic-webfont', 300, italic);
-@include font-face(Josefin-Slab-Bold-Italic, '../fonts/josefinslab-bolditalic-webfont', 700, italic);
-@include font-face(Lato-Regular, '../fonts/lato-reg-webfont', 400, normal);
-@include font-face(Lato-Black, '../fonts/lato-bla-webfont', 900, normal);
+// @include font-face(Josefin-Slab-Regular, '../fonts/josefinslab-regular-webfont', 400, normal);
+// @include font-face(Josefin-Slab-Light, '../fonts/josefinslab-light-webfont', 300, normal);
+// @include font-face(Josefin-Slab-Light-Italic, '../fonts/josefinslab-lightitalic-webfont', 300, italic);
+// @include font-face(Josefin-Slab-Bold-Italic, '../fonts/josefinslab-bolditalic-webfont', 700, italic);
+// @include font-face(Lato-Regular, '../fonts/lato-reg-webfont', 400, normal);
+// @include font-face(Lato-Black, '../fonts/lato-bla-webfont', 900, normal);
 
 
 
@@ -56,6 +56,10 @@
   font-family: 'Lato', sans-serif;
   font-weight: 300; font-style: normal;
 }
+@mixin latoRegular{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; font-style: normal;
+}
 
 @mixin crimson400{
   font-family: 'Crimson Text', serif;
@@ -67,5 +71,11 @@
   //font-weight: 600; font-style: italic;
   font-family: 'Lato-regular', sans-serif;
   font-weight: 400; font-style: italic;
+}
+
+@mixin h3BgColor
+{
+  background-color: #344D60;;
+ // background-color: rgba(138, 166, 188, 1.0);
 }
 

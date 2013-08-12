@@ -12,75 +12,19 @@ lightest: #FBEFF1
 border-radius: 4px;
 border: solid 1px #7898A5;
 background-color: #C5D2D8; (still darker than background) */
+/* red
+$tableTitleBg: #E51837;
+$subTableTitleBg: #EAB3BB;
+$tableBorder: #EAB3BB;
+$lightestRed: #FBEFF1;
+
+$primary: #E51837;
+$darkItalic: #7898A5;
+$darkItalic2: #006363;
+*/
 /*=================================*/
 /* 
 /*===================================*/
-@font-face {
-  font-family: Josefin-Slab-Regular;
-  src: url("../fonts/josefinslab-regular-webfont.eot");
-  src: url("../fonts/josefinslab-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/josefinslab-regular-webfont.woff") format("woff"), url("../fonts/josefinslab-regular-webfont.ttf") format("truetype"), url("../fonts/josefinslab-regular-webfont.svg#Josefin-Slab-Regular") format("svg");
-  font-weight: 400;
-  font-style: normal; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: Josefin-Slab-Regular;
-    src: url("../fonts/josefinslab-regular-webfont.svg#Josefin-Slab-Regular") format("svg"); } }
-@font-face {
-  font-family: Josefin-Slab-Light;
-  src: url("../fonts/josefinslab-light-webfont.eot");
-  src: url("../fonts/josefinslab-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/josefinslab-light-webfont.woff") format("woff"), url("../fonts/josefinslab-light-webfont.ttf") format("truetype"), url("../fonts/josefinslab-light-webfont.svg#Josefin-Slab-Light") format("svg");
-  font-weight: 300;
-  font-style: normal; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: Josefin-Slab-Light;
-    src: url("../fonts/josefinslab-light-webfont.svg#Josefin-Slab-Light") format("svg"); } }
-@font-face {
-  font-family: Josefin-Slab-Light-Italic;
-  src: url("../fonts/josefinslab-lightitalic-webfont.eot");
-  src: url("../fonts/josefinslab-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/josefinslab-lightitalic-webfont.woff") format("woff"), url("../fonts/josefinslab-lightitalic-webfont.ttf") format("truetype"), url("../fonts/josefinslab-lightitalic-webfont.svg#Josefin-Slab-Light-Italic") format("svg");
-  font-weight: 300;
-  font-style: italic; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: Josefin-Slab-Light-Italic;
-    src: url("../fonts/josefinslab-lightitalic-webfont.svg#Josefin-Slab-Light-Italic") format("svg"); } }
-@font-face {
-  font-family: Josefin-Slab-Bold-Italic;
-  src: url("../fonts/josefinslab-bolditalic-webfont.eot");
-  src: url("../fonts/josefinslab-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/josefinslab-bolditalic-webfont.woff") format("woff"), url("../fonts/josefinslab-bolditalic-webfont.ttf") format("truetype"), url("../fonts/josefinslab-bolditalic-webfont.svg#Josefin-Slab-Bold-Italic") format("svg");
-  font-weight: 700;
-  font-style: italic; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: Josefin-Slab-Bold-Italic;
-    src: url("../fonts/josefinslab-bolditalic-webfont.svg#Josefin-Slab-Bold-Italic") format("svg"); } }
-@font-face {
-  font-family: Lato-Regular;
-  src: url("../fonts/lato-reg-webfont.eot");
-  src: url("../fonts/lato-reg-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-reg-webfont.woff") format("woff"), url("../fonts/lato-reg-webfont.ttf") format("truetype"), url("../fonts/lato-reg-webfont.svg#Lato-Regular") format("svg");
-  font-weight: 400;
-  font-style: normal; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: Lato-Regular;
-    src: url("../fonts/lato-reg-webfont.svg#Lato-Regular") format("svg"); } }
-@font-face {
-  font-family: Lato-Black;
-  src: url("../fonts/lato-bla-webfont.eot");
-  src: url("../fonts/lato-bla-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bla-webfont.woff") format("woff"), url("../fonts/lato-bla-webfont.ttf") format("truetype"), url("../fonts/lato-bla-webfont.svg#Lato-Black") format("svg");
-  font-weight: 900;
-  font-style: normal; }
-
-@media screen and (-webkit-min-device-pixel-ratio: 0) {
-  @font-face {
-    font-family: Lato-Black;
-    src: url("../fonts/lato-bla-webfont.svg#Lato-Black") format("svg"); } }
 html {
   font-size: 62.5%; }
 
@@ -91,18 +35,9 @@ body {
   line-height: 1.3;
   color: black;
   background-color: #d8e1e5;
-  *zoom: 1;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   font-family: 'Lato-Regular', arial, sans-serif;
   font-weight: 400;
   font-style: normal; }
-  body:before, body:after {
-    content: " ";
-    display: table; }
-  body:after {
-    clear: both; }
 
 a {
   text-decoration: none; }
@@ -122,25 +57,16 @@ h3 {
   font-size: 18px;
   font-size: 1.8em; }
 
-section {
-  display: block;
-  float: left;
-  margin-right: 2.35765%;
-  width: 100%; }
-  section:last-child {
-    margin-right: 0; }
-
 .logo {
   vertical-align: 0.2em;
   margin-top: -3em;
   font-size: 20px;
   font-size: 2.0rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-style: normal;
   border-radius: 0.5em;
-  text-shadow: 1px 1px 0 #FFF;
-  color: #000; }
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #32485a; }
 
 .icon-menu, .icon-search {
   font-size: 30px;
@@ -285,21 +211,21 @@ form{
   -webkit-border-top-right-radius: 5px;
   -webkit-border-top-left-radius: 5px; }
   .box h3 {
-    background-color: rgba(229, 24, 55, 0.9);
+    background-color: #344D60;
     color: white;
     padding: 0.3em 0px;
     text-align: center;
     margin: 0; }
   .box h4 {
-    background-color: #eab3bb;
+    background-color: #8aa6bc;
     color: #000;
     padding: 0.3em 0px;
     text-align: center;
     margin: 0;
     padding-top: 0.5em;
     padding-bottom: 0.5em; }
-  .box .primaryDetail {
-    color: #e51837;
+  .box .primaryDetail a {
+    color: #006363;
     font-family: 'Lato-regular', sans-serif;
     font-weight: 400;
     font-style: italic;
@@ -310,6 +236,17 @@ form{
     color: #333;
     padding-left: 10px;
     margin: 0.5em auto; }
+  .box a.secondaryDetail {
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em; }
+  .box a.secondaryDetail:hover {
+    background-color: #FBE2E6;
+    color: #32485a; }
+  .box p.primaryDetail:hover {
+    background-color: #FBE2E6;
+    color: #32485a; }
 
 .active-left [role="hourLoc"] {
   margin-left: 0;
@@ -332,6 +269,89 @@ form{
   margin-left: 0;
   width: 80%; }
 
+.active-left [role="main"] {
+  -webkit-transition: .1s all ease;
+  -moz-transition: .1s all ease;
+  -o-transition: .1s all ease;
+  -ms-transition: .1s all ease;
+  transition: .1s all ease; }
+
+@media all and (min-width: 600px) {
+  .hours-locations-button {
+    display: none; }
+
+  .service-button {
+    border: none; }
+
+  .js [role="hourLoc"] {
+    width: 38%;
+    margin-left: 1%;
+    margin-right: 2%; }
+
+  .js [role="todayEvents"] {
+    width: 48%;
+    float: left;
+    margin-right: 2%; }
+
+  .js [role="Services"] {
+    width: 10%; }
+
+  .active-right [role="hourLoc"] {
+    margin-left: -100%; }
+
+  .active-right [role="todayEvents"] {
+    margin-left: 0;
+    width: 60%; }
+
+  .active-right [role="services"] {
+    margin-right: 0;
+    width: 30%; } }
+@media all and (min-width: 890px) {
+  .off-canvas-navigation {
+    display: none; }
+
+  .js [role="hourLoc"] {
+    width: 22%;
+    margin-left: 2%;
+    margin-right: 2%;
+    float: left;
+    padding: 1%; }
+
+  .js [role="todayEvents"] {
+    width: 42%;
+    padding: 1%;
+    margin-right: 2%; }
+
+  .js [role="services"] {
+    width: 24%;
+    padding: 1%;
+    margin-right: 0;
+    float: left; }
+
+  #bigBg {
+    margin-bottom: 5em; }
+
+  .todayHighlights {
+    background-image: url("../images/bplInsideBig.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 6rem;
+    letter-spacing: 0.1214em;
+    margin: 0 auto; }
+
+  .three-column {
+    width: 100%; }
+
+  .container2 {
+    max-width: 1140px;
+    margin: 0 auto; } }
 /* Helper Classes =============================================================================== */
 .hide {
   display: none !important;
