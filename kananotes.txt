@@ -1,11 +1,2 @@
 &#123;Boston Public Library&#125; &#38;
 
-watermelon:
-Primary: #E51837
-less bright: #EAB3BB
-lighter: #FBE2E6
-lightest: #FBEFF1
-
-border-radius: 4px;
-border: solid 1px #7898A5;
-background-color: #C5D2D8; (still darker than background)
