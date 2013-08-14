@@ -276,6 +276,9 @@ form{
   -ms-transition: .1s all ease;
   transition: .1s all ease; }
 
+#bigBg {
+  display: none !important; }
+
 @media all and (min-width: 600px) {
   .hours-locations-button {
     display: none; }
@@ -305,7 +308,10 @@ form{
 
   .active-right [role="services"] {
     margin-right: 0;
-    width: 30%; } }
+    width: 30%; }
+
+  #bigBg {
+    display: none !important; } }
 @media all and (min-width: 890px) {
   .off-canvas-navigation {
     display: none; }
@@ -329,9 +335,8 @@ form{
     float: left; }
 
   #bigBg {
-    margin-bottom: 5em; }
-
-  .todayHighlights {
+    display: block !important;
+    margin-bottom: 5em;
     background-image: url("../images/bplInsideBig.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -342,16 +347,43 @@ form{
     font-style: normal;
     text-align: center;
     vertical-align: middle;
-    font-size: 6rem;
+    font-size: 4rem;
     letter-spacing: 0.1214em;
     margin: 0 auto; }
+
+  .todayHighlights {
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    text-align: left;
+    letter-spacing: 0.1214em;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    font-size: 3em; }
 
   .three-column {
     width: 100%; }
 
   .container2 {
     max-width: 1140px;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  .topBg {
+    position: relative;
+    margin-bottom: 5em; }
+
+  #bigBg {
+    display: block !important;
+    opacity: 1;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 1s ease-in-out; } }
 /* Helper Classes =============================================================================== */
 .hide {
   display: none !important;

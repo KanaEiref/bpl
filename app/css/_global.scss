@@ -290,6 +290,10 @@ form{
 	transition: .1s all ease;	
 }
 
+	#bigBg{
+		display: none !important;
+	}	
+
 
 
 //for medium screen
@@ -328,9 +332,14 @@ form{
 		margin-right: 0;
 		width: 30%;
 
-	}				
+	}	
+
+	#bigBg{
+		display: none !important;
+	}		
 }
 
+//big screen
 @media all and (min-width: 890px) {	
 	.off-canvas-navigation {
 		display: none;
@@ -374,16 +383,17 @@ form{
 		// top: 5em;
 		// left:0;
 		//min-width: 100%;
+		display: block !important;
 
 		 margin-bottom: 5em;
 		// width: 100%;
 		// height: 480px;
-	}
 
-	.todayHighlights {
 		background-image: url('../images/bplInsideBig.jpg');
 		background-repeat: no-repeat;
 		background-position: center;
+
+		
 		
 		color: #fff;
 		// padding-top: 1em;
@@ -395,10 +405,30 @@ form{
 		font-style: normal;
 		text-align: center;
 		vertical-align: middle;
-		font-size: 6rem;
+		font-size: 4rem;
 		letter-spacing: 0.1214em;
 		margin: 0 auto;
 	}
+
+
+	.todayHighlights{
+		background-color: transparent;
+			color: $white;
+		// padding-top: 1em;
+	 //  	padding-bottom: 1em;
+	 //  	padding-left: 1em;
+	  	text-transform: uppercase;
+	  	@include latoReallyLight;
+	  	text-align: left;
+	  	letter-spacing: 0.1214em;  
+	  	//margin: 0 auto; 
+	  	position: absolute;
+	  	top: 20%;
+	  	left: 20%;
+	  	font-size: 3em;
+	}
+
+	
 
 	.three-column{
 		width: 100%;
@@ -409,6 +439,21 @@ form{
 		max-width: 1140px;
 		margin: 0 auto;
 	}
+
+	.topBg{		
+		position: relative;
+		margin-bottom: 5em;
+	}
+
+	#bigBg{
+		display: block !important;
+		opacity: 1;
+		-webkit-transition: opacity 1s ease-in-out;
+		-moz-transition: opacity 0.4s ease-in-out;
+		-ms-transition: opacity 0.4s ease-in-out;
+		-o-transition: opacity 0.4s ease-in-out;
+		transition: opacity 1s ease-in-out;
+	}	
 
 
 }
