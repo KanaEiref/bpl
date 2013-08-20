@@ -334,9 +334,43 @@ form{
     margin-right: 0;
     float: left; }
 
+  #tiledMenu {
+    position: fixed;
+    width: 35%;
+    top: 0;
+    right: 0;
+    z-index: 1337;
+    background: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    font-size: 2.1em; }
+    #tiledMenu a {
+      color: inherit;
+      width: 25%;
+      float: left;
+      line-height: 1.85em;
+      max-height: 1.85em;
+      text-align: center;
+      border: none;
+      border-right: 0.15em solid rgba(255, 255, 255, 0.4); }
+    #tiledMenu a:active {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.9);
+      border-bottom: 0.1em solid rgba(255, 255, 255, 0.3);
+      padding-bottom: .15em;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+    #tiledMenu div:nth-child(1) a {
+      border-bottom: 0.15em solid rgba(255, 255, 255, 0.4); }
+
   #bigBg {
     display: block !important;
-    margin-bottom: 5em;
+    margin-bottom: 2em;
     background-image: url("../images/bplInsideBig.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -348,8 +382,7 @@ form{
     text-align: center;
     vertical-align: middle;
     font-size: 4rem;
-    letter-spacing: 0.1214em;
-    margin: 0 auto; }
+    letter-spacing: 0.1214em; }
 
   .todayHighlights {
     background-color: transparent;

@@ -1,2 +1,27 @@
 &#123;Boston Public Library&#125; &#38;
 
+.active-sidebar [role="navigation"] {	
+	margin-left: -200%;
+}
+.active-sidebar [role="main"] {
+	margin-left: -90%;	
+}
+.active-sidebar [role="complementary"] {	
+	margin-left: 0;
+	width: 80%;	
+}
+
+opacity: 1;
+-webkit-transition: opacity 0.4s ease-in-out;
+-moz-transition: opacity 0.4s ease-in-out;
+-ms-transition: opacity 0.4s ease-in-out;
+-o-transition: opacity 0.4s ease-in-out;
+transition: opacity 0.4s ease-in-out;
+
+
+video-header-bg1814759525.jpg
+
+
+Kana, let’s explore the balance of how we introduce 
+a functioning cloud vs. a screenshot that leads 
+the user to start making one of their own
