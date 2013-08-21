@@ -57,6 +57,9 @@ h3 {
   font-size: 18px;
   font-size: 1.8em; }
 
+#tiledMenu, .icon-library {
+  display: none; }
+
 .logo {
   vertical-align: 0.2em;
   margin-top: -3em;
@@ -68,7 +71,7 @@ h3 {
   font-style: normal;
   color: #32485a; }
 
-.icon-menu, .icon-search {
+.icon-menu, .icon-search, .icon-library {
   font-size: 30px;
   font-size: 3.0rem;
   color: black; }
@@ -90,32 +93,6 @@ h3 {
   letter-spacing: 0.1214em;
   margin: 0 auto; }
 
- /*
-form{
-	padding-left: 1em;
-	vertical-align: bottom;
-
-	.inputWrapper{
-		float:left;
-		margin-top: 0.3em;
-
-	}
-
-	input[type=search]{
-	float: left;
-	color: red;  
-	
-	cursor: pointer;
-	display: block; 
-	width: 50%;	
-    font-size: 2.4em;
-  
-    margin-right: 1em;
-	}
-
-	input[type="radio"]{	
-	}
-}*/
 [role="hourLoc"],
 [role="todayEvents"],
 [role="services"] {
@@ -123,7 +100,8 @@ form{
   -moz-transition: 0.2s all ease;
   transition: 0.2s all ease;
   width: 95%;
-  padding: 5%; }
+  padding: 5%;
+  margin-bottom: 3em; }
 
 .js [role="hourLoc"] {
   background-color: #eeeeee;
@@ -280,7 +258,7 @@ form{
   display: none !important; }
 
 @media all and (min-width: 600px) {
-  .hours-locations-button {
+  .hours-locations-button, #tiledMenu {
     display: none; }
 
   .service-button {
@@ -313,8 +291,22 @@ form{
   #bigBg {
     display: none !important; } }
 @media all and (min-width: 890px) {
-  .off-canvas-navigation {
+  .icon-library {
+    display: inline-block;
+    color: #fbeff1; }
+
+  .off-canvas-navigation, .icon-menu {
     display: none; }
+
+  .icon-search {
+    position: absolute;
+    top: 0;
+    left: 8em;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
 
   .js [role="hourLoc"] {
     width: 22%;
@@ -334,9 +326,14 @@ form{
     margin-right: 0;
     float: left; }
 
+  #tiledMenu:hover {
+    background: rgba(0, 0, 0, 0.9);
+    color: rgba(189, 223, 238, 0.7); }
+
   #tiledMenu {
+    display: inline-block;
     position: fixed;
-    width: 35%;
+    width: 45%;
     top: 0;
     right: 0;
     z-index: 1337;
@@ -346,16 +343,25 @@ form{
     -moz-transition: all 0.35s ease-in-out;
     -o-transition: all 0.35s ease-in-out;
     transition: all 0.35s ease-in-out;
-    font-size: 2.1em; }
+    font-size: 1.8rem; }
     #tiledMenu a {
       color: inherit;
       width: 25%;
       float: left;
+      height: 5em;
       line-height: 1.85em;
-      max-height: 1.85em;
+      max-height: 25%;
       text-align: center;
       border: none;
-      border-right: 0.15em solid rgba(255, 255, 255, 0.4); }
+      border-right: 0.15em solid rgba(255, 255, 255, 0.4);
+      padding-top: 1em;
+      padding-left: 0.5em;
+      padding-right: 0.5em;
+      text-align: bottom; }
+    #tiledMenu a:hover {
+      color: rgba(188, 56, 68, 0.7);
+      text-shadow: 0 0 0.025em rgba(200, 200, 200, 0.1);
+      background: rgba(255, 255, 255, 0.3); }
     #tiledMenu a:active {
       text-decoration: none;
       color: rgba(255, 255, 255, 0.9);
@@ -403,7 +409,7 @@ form{
 
   .container2 {
     max-width: 1140px;
-    margin: 0 auto; }
+    margin: 0 auto 20px auto; }
 
   .topBg {
     position: relative;
@@ -417,6 +423,37 @@ form{
     -ms-transition: opacity 0.4s ease-in-out;
     -o-transition: opacity 0.4s ease-in-out;
     transition: opacity 1s ease-in-out; } }
+#footer {
+  clear: both;
+  hight: 10em;
+  background-color: gray;
+  margin-top: 100px; }
+
+#footer ul {
+  padding-top: 2em; }
+
+#footer ul li {
+  display: inline;
+  list-style: none;
+  padding-left: 2em; }
+
+.offmode {
+  width: 8em;
+  position: absolute;
+  top: -3em;
+  left: 30%; }
+
+.onmode {
+  display: block;
+  position: absolute;
+  top: 2em;
+  left: 30%;
+  font-size: 2.4em;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+
 /* Helper Classes =============================================================================== */
 .hide {
   display: none !important;

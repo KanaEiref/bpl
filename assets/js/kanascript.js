@@ -36,58 +36,22 @@ jQuery(document).ready(function($) {
 			showServices();									
 		});							
 });
-/*
+
 ;(function() {
 
 	"use strict";
 
+	function clickSearchEvent(event){
 
-	if(!Modernizr.input.required) {
-					Monderizr.load({
-			load: 'assets/js/vendor/jquery.validate.min.js',
-			complete: function() {
-							$('#kanaform').validate({
-					rules: {
-						portfolioAddress: "required",
-						portfolioTitle: "required",
-						name: {
-							required: true,
-							minlength: 2
-						},
-						email: {
-							required: true,
-							email: true
-						},
-						password: {
-							required: true,
-							minlength: 5
-						},
-						cardNumber: "required",
-						securityCode: "required",
-						monthList: "required", 
-						yearList: "required"
-					},
+		console.log(event.type);
+		$('#searchbox').toggleClass("onmode");
 
-					messages:  {
-						portfolioAddress: "Please enter your portfolio address",
-						portfolioTitle: "Please enter your portfoilo title",
-						name: {
-							required: "Please enter a name",
-							minlength: "Your name must consist of at least 2 characters"
-						},
-						email: "Please enter a valid email address",
-						password: {
-							required: "Please provide a password",
-							minlength: "Your password must be at least 5 characters long"
-						},
-						cardNumber: "Please enter your credit card number",
-						securityCode: "Please enter your security code",
-						monthList: "Please enter your card expiration month",
-						yearList:  "Please enter your card expiration year"			
-					}
-				}); //end of validate 
-			} // end of call back function
-			});
-	}	
+	}
 
-})(); */
+	document.addEventListener("DOMContentLoaded", function(){
+		var iconsearch = document.getElementById('iconsearch');
+		iconsearch.addEventListener("click", clickSearchEvent, false);
+		//textbox.addEventListener("keyup", handleEvent, false);
+		//textbox.addEventListener("blur", handleEvent, false);
+	}, false);	
+})();

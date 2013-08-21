@@ -18,10 +18,54 @@ opacity: 1;
 -o-transition: opacity 0.4s ease-in-out;
 transition: opacity 0.4s ease-in-out;
 
+/*a.active:after {
+			position: absolute;
+			right: .015em;
+			top: .45em;
+			content: '\f004';
+			font: 0.75em/0.85em "FontAwesome",sans-serif;
+			color: rgba(188,56,68,0.7);
+			text-shadow: 0 0 0.025em rgba(200,200,200,0.1);
+			letter-spacing: .45em;
+			text-align: right;*/
 
-video-header-bg1814759525.jpg
 
 
-Kana, let’s explore the balance of how we introduce 
-a functioning cloud vs. a screenshot that leads 
-the user to start making one of their own
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+===================================
+[8/21/13 9:52:23 AM] Alex Fedorov: hmm. Looks like we do need to change the 2 CTA buttons below the 3 columns as well
+[8/21/13 9:52:34 AM] Alex Fedorov: to "Try it Now" and "Get the iOS App"
+[8/21/13 9:52:49 AM] Alex Fedorov: Maybe they can both be green with white text since they have relatively equal weights
+[8/21/13 9:53:16 AM] Alex Fedorov: so they did supply the text for each column. It looks like we may need small buttons or links under each column for "Learn More" about each of those feature types
+
+
+[8/21/13 10:06:01 AM] Alex Fedorov: i got it
+[8/21/13 10:06:10 AM] Alex Fedorov: so the 3 new circles are in the Design_E folder as 1 psd
+[8/21/13 10:06:21 AM] Alex Fedorov: 2 of them I found on their website under about so they're a little smaller. 184px squared
+[8/21/13 10:06:42 AM] Alex Fedorov: I made the 3rd one with a screenshot and applied the layer styles so maybe in the future we can make the circles bigger if they can provide us with the larger original images
+[8/21/13 10:06:47 AM] Alex Fedorov: for now we can use those 3
