@@ -45,13 +45,40 @@ jQuery(document).ready(function($) {
 
 		console.log(event.type);
 		$('#searchbox').toggleClass("onmode");
+		$('#searchbox').focus();
+		$('#output').toggleClass("onoutput");
+
+	}
+
+	function searchEvent(event){
+		$.getJSON('assets/books.json', function(data){
+
+			var books = data.bookwarehouse,
+			count = books.length,
+			searchValue = $('input').val();
+
+			$('#output').empty();
+
+			if (count > 0 && searchValue != " "){
+				$.each(books, function (i, obj) {
+				if (obj.name.indexOf(searchValue) != -1){
+					$('#output').append('<p> <a href="#' +
+						obj.location + '">'+ obj.name +'</a><p>').hide().fadeIn();
+				}
+			});
+			}
+
+
+		}).error(function(){ alert('there was an ajax error');
+		}).complete(function(){}); //end of ajax call
 
 	}
 
 	document.addEventListener("DOMContentLoaded", function(){
 		var iconsearch = document.getElementById('iconsearch');
 		iconsearch.addEventListener("click", clickSearchEvent, false);
-		//textbox.addEventListener("keyup", handleEvent, false);
-		//textbox.addEventListener("blur", handleEvent, false);
+		var searchbox = document.getElementById('searchbox');
+		searchbox.addEventListener("keyup", searchEvent, false);
+
 	}, false);	
 })();
