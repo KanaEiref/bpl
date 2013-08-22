@@ -1,7 +1,7 @@
 {
-"bookwarehouse" : [ {"name": "Where the wild things are", "location": "Central Library"},
-				{"name": "Good night moon", "location": "North End Branch"},
-				{"name": "Good night gorila", "location": "Brookline Branch"},
-				{"name": "Brown bear", "location": "Brighton Branch"}
+"bookwarehouse" : [ {"name": "where the wild things are", "location": "Central Library"},
+				{"name": "good night moon", "location": "North End Branch"},
+				{"name": "good night gorila", "location": "Brookline Branch"},
+				{"name": "brown bear", "location": "Brighton Branch"}
 				]
 }
