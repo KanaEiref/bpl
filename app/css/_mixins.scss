@@ -80,7 +80,21 @@
 
 @mixin h3BgColor
 {
-  background-color: #344D60;;
+ // background-color: #344D60;;
  // background-color: rgba(138, 166, 188, 1.0);
+ background-color: #708090;
+
+}
+
+@mixin footerfont
+{
+   font-family: 'Lato', sans-serif;
+  font-weight: 100; font-style: normal;
+  font-size: 1.2rem;
+}
+
+@mixin highlightBg
+{
+  background-color: rgba(119,136,153, 0.7);
 }
 

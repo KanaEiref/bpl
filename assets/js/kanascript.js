@@ -41,13 +41,16 @@ jQuery(document).ready(function($) {
 
 	"use strict";
 
+	function clickmenuEvent(event){
+		$('#mobileMenu').toggleClass("onmenu");
+	}
+
 	function clickSearchEvent(event){
 
-		console.log(event.type);
+
 		$('#searchbox').toggleClass("onmode");
 		$('#searchbox').focus();
 		$('#output').toggleClass("onoutput");
-
 	}
 
 	function searchEvent(event){
@@ -60,10 +63,12 @@ jQuery(document).ready(function($) {
 			$('#output').empty();
 
 			if (count > 0 && searchValue != " "){
+
+				
 				$.each(books, function (i, obj) {
 				if (obj.name.indexOf(searchValue) != -1){
-					$('#output').append('<p> <a href="#' +
-						obj.location + '">'+ obj.name +'</a><p>').hide().fadeIn();
+					$('#output').append('<p> <a href="#">' +
+						obj.name + '&nbsp;&nbsp;&nbsp;&shy;&nbsp;' + obj.location + '</a><p>').hide().fadeIn();
 				}
 			});
 			}
@@ -79,6 +84,8 @@ jQuery(document).ready(function($) {
 		iconsearch.addEventListener("click", clickSearchEvent, false);
 		var searchbox = document.getElementById('searchbox');
 		searchbox.addEventListener("keyup", searchEvent, false);
+		var iconmenu = document.getElementById('iconmenu');
+		iconmenu.addEventListener("click", clickmenuEvent, false);
 
 	}, false);	
 })();
